@@ -36,6 +36,10 @@ public class Keuangan {
         System.out.println("Total Uang Sekarang: " + getSaldo());
 
         System.out.println("\nDetail Pemasukan:");
+        pengeluaranDanPemasukan();
+    }
+
+    private static void pengeluaranDanPemasukan() {
         for (int i = 0; i < incomeNotes.size(); i++) {
             System.out.println("- " + incomeNotes.get(i) + " : " + incomeAmounts.get(i));
         }
